@@ -2,7 +2,6 @@ import React from "react";
 
 // Import images
 import logo from "../assets/IULogo.png";
-import rightLogo from "../assets/IU-website.png"; // 👈 right side logo (change image if needed)
 
 function Navbar() {
   const pulseTextAnimation = {
