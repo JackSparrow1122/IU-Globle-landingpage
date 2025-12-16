@@ -10,7 +10,7 @@ function MarketingManagementPointers() {
         <div className="bg-[#F6FBFF] p-2 md:p-4 shadow-md flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-[#E9F7FA]">
           <FaChalkboard size={30} className="text-[#023B5E]" />
           <h2 className="text-[#135783] text-sm md:text-base font-semibold mt-2">
-            Program Format
+            Programme Format
           </h2>
           <p className="text-[#135783] text-sm md:text-base">Offline</p>
         </div>

@@ -42,7 +42,7 @@ function CompStudying() {
           className="text-2xl md:text-4xl font-semibold mb-2 md:mb-4"
           style={{ color: PRIMARY_COLOR }}
         >
-          Learn. Lead. Succeed.
+          Learn, Lead & Succeed!
         </h1>
 
         <h1

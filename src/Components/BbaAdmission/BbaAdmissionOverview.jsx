@@ -24,12 +24,12 @@ function BbaAdmissionOverview() {
 
         <p className="text-sm md:text-lg text-gray-600 tracking-wide">
           Our BBA programme is designed to transform aspiring students into
-          industry-ready business professionals. As a top choice in Pune, we
+          industry-ready business professionals. As your top choice, we
           offer a robust curriculum that blends core management principles with
           modern specializations in Marketing, Finance, HR, Digital Marketing,
           Logistics, and more. Through case studies, live projects, and
           internships, students gain both knowledge and practical expertise.
-          Admissions for 2025 are now open—begin your journey in business
+          Admissions for 2026 are now open, begin your journey in business
           leadership today.
         </p>
       </div>
