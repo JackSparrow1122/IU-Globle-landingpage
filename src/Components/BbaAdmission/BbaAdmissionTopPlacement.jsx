@@ -65,7 +65,8 @@ const students = [
     image: img8,
   },
   {
-    name: "Ms. Samiksha Pimpalshende",
+    name: "Ms. Samiksha P.",
+    // Pimpalshende
     company: "Ocman Realty",
     feedback: "Excellent mentorship and placement support throughout.",
     image: img9,
@@ -167,7 +168,7 @@ const TopPlacements = () => {
                     <h3 className="text-sm md:text-base font-semibold text-black">
                       {student.name}
                     </h3>
-                    <p className="text-xs md:text-sm text-black">
+                    <p className="text-sm md:text-lg text-white bg-[#003C84] pl-4">
                       {student.company || "Placement Achieved"}
                     </p>
                   </div>

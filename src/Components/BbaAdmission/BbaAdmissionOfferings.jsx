@@ -42,13 +42,13 @@ function BbaAdmissionOfferings() {
   return (
     <div className="px-8 md:px-16 py-4 md:py-8 bg-[#f3f4f6] poppins-regular">
       <h2
-        className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8 text-[#135883]"
+        className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8 text-[#011E5A]"
         data-aos="fade-up"
       >
         Why Choose Us?
       </h2>
       <h2
-        className="text-xl md:text-2xl font-bold text-center mb-4 md:mb-8 text-[#135883]"
+        className="text-xl md:text-2xl font-bold text-center mb-4 md:mb-8 text-[#011E5A]"
         data-aos="fade-up"
       >
         At the School of Business, we provide an unmatched management education
@@ -66,35 +66,34 @@ function BbaAdmissionOfferings() {
         ].map((Icon, index) => (
           <div
             key={index}
-            className="bg-[#135783] p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            className="bg-[#011E5A] p-4 shadow-xl flex flex-col items-start text-left relative rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
           >
             <Icon size={40} className="text-[#FECD46] mb-4 icon" />
             <p className="text-white">
-  {(() => {
-    const text =
-      [
-        "Advanced Infrastructure: Smart classrooms, business labs, and a digital library designed for interactive learning.",
-        "Strong Placements: Consistent recruitment by top companies, supported by dedicated career guidance.",
-        "Vibrant Campus Life: National fests, industry talks, and cultural events that build confidence and networks.",
-        "Industry Readiness Training: Structured modules in communication, aptitude, and interview skills to ensure corporate readiness.",
-        "Growing Alumni Network: Access to mentors and professionals across industries.",
-        "Experiential Learning: Learn through simulations, expert sessions, and mandatory internships.",
-      ][index];
+              {(() => {
+                const text = [
+                  "Advanced Infrastructure: Smart classrooms, business labs, and a digital library designed for interactive learning.",
+                  "Strong Placements: Consistent recruitment by top companies, supported by dedicated career guidance.",
+                  "Vibrant Campus Life: National fests, industry talks, and cultural events that build confidence and networks.",
+                  "Industry Readiness Training: Structured modules in communication, aptitude, and interview skills to ensure corporate readiness.",
+                  "Growing Alumni Network: Access to mentors and professionals across industries.",
+                  "Experiential Learning: Learn through simulations, expert sessions, and mandatory internships.",
+                ][index];
 
-    const [title, desc] = text.split(":");
+                const [title, desc] = text.split(":");
 
-    return (
-      <>
-        <span className="font-bold text-md md:text-lg block">
-          {title}:
-        </span>
-        <span className="text-sm md:text-base opacity-90">
-          {desc}
-        </span>
-      </>
-    );
-  })()}
-</p>
+                return (
+                  <>
+                    <span className="font-bold text-md md:text-lg block">
+                      {title}:
+                    </span>
+                    <span className="text-sm md:text-base opacity-90">
+                      {desc}
+                    </span>
+                  </>
+                );
+              })()}
+            </p>
 
             <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-white rounded-full shadow-2xl"></div>
           </div>

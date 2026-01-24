@@ -19,12 +19,12 @@ const POINTERS_DATA = [
     ),
     icon: FaRegClock,
   },
-  {
-    id: 2,
-    title: "Average CTC",
-    value: "6-8 LPA",
-    icon: FaChartLine,
-  },
+  // {
+  //   id: 2,
+  //   title: "Average CTC",
+  //   value: "6-8 LPA",
+  //   icon: FaChartLine,
+  // },
   {
     id: 3,
     title: "Highest CTC",
@@ -51,7 +51,7 @@ const POINTERS_DATA = [
 function MarketingManagementPointers() {
   return (
     <div className="px-8 md:px-16 py-6 poppins-regular">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6 max-w-7xl mx-auto">
         {POINTERS_DATA.map(({ id, title, value, icon: Icon }) => (
           <div
             key={id}

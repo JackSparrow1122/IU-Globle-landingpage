@@ -39,15 +39,13 @@ function CompStudying() {
         data-aos="fade-right"
       >
         <h1
-          className="text-2xl md:text-4xl font-semibold mb-2 md:mb-4"
-          style={{ color: PRIMARY_COLOR }}
+          className="text-2xl md:text-4xl font-semibold mb-2 md:mb-4 text-[#990200]"
         >
           Learn, Lead & Succeed!
         </h1>
 
         <h1
-          className="text-2xl md:text-4xl font-extralight mb-4 md:mb-6"
-          style={{ color: PRIMARY_COLOR }}
+          className="text-2xl md:text-4xl font-extralight mb-4 md:mb-6 text-[#011E5A]"
         >
           Where Proven Legacy Meets Future-Focused Business Education.
         </h1>

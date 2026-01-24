@@ -9,25 +9,24 @@ import logo6 from "../assets/Images/bba-logo/6.jpg";
 import logo7 from "../assets/Images/bba-logo/7.jpg";
 import logo8 from "../assets/Images/bba-logo/8.jpg";
 import logo9 from "../assets/Images/bba-logo/9.jpg";
-import logo10 from "../assets/Images/bba-logo/10.jpg"
-import logo11 from "../assets/Images/bba-logo/11.jpg"
-import logo12 from "../assets/Images/bba-logo/12.jpg"
-import logo13 from "../assets/Images/bba-logo/13.jpg"
-import logo14 from "../assets/Images/bba-logo/14.jpg"
-import logo15 from "../assets/Images/bba-logo/15.jpg"
-import logo16 from "../assets/Images/bba-logo/16.jpg"
-import logo17 from "../assets/Images/bba-logo/17.jpg"
-import logo18 from "../assets/Images/bba-logo/18.jpg"
-import logo19 from "../assets/Images/bba-logo/19.jpg"
-import logo20 from "../assets/Images/bba-logo/20.jpg"
-import logo21 from "../assets/Images/bba-logo/21.jpg"
-import logo22 from "../assets/Images/bba-logo/22.jpg"
-import logo23 from "../assets/Images/bba-logo/23.jpg"
-import logo24 from "../assets/Images/bba-logo/24.jpg"
-import logo25 from "../assets/Images/bba-logo/24.jpg"
-import logo26 from "../assets/Images/bba-logo/26.jpg"
-import logo27 from "../assets/Images/bba-logo/27.jpg"
-
+import logo10 from "../assets/Images/bba-logo/10.jpg";
+import logo11 from "../assets/Images/bba-logo/11.jpg";
+import logo12 from "../assets/Images/bba-logo/12.jpg";
+import logo13 from "../assets/Images/bba-logo/13.jpg";
+import logo14 from "../assets/Images/bba-logo/14.jpg";
+import logo15 from "../assets/Images/bba-logo/15.jpg";
+import logo16 from "../assets/Images/bba-logo/16.jpg";
+import logo17 from "../assets/Images/bba-logo/17.jpg";
+import logo18 from "../assets/Images/bba-logo/18.jpg";
+import logo19 from "../assets/Images/bba-logo/19.jpg";
+import logo20 from "../assets/Images/bba-logo/20.jpg";
+import logo21 from "../assets/Images/bba-logo/21.jpg";
+import logo22 from "../assets/Images/bba-logo/22.jpg";
+import logo23 from "../assets/Images/bba-logo/23.jpg";
+import logo24 from "../assets/Images/bba-logo/24.jpg";
+import logo25 from "../assets/Images/bba-logo/24.jpg";
+import logo26 from "../assets/Images/bba-logo/26.jpg";
+import logo27 from "../assets/Images/bba-logo/27.jpg";
 
 const CompRecruiter = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -76,9 +75,9 @@ const CompRecruiter = () => {
     <div className="logo-slider-section py-6 roboto-regular overflow-hidden bg-white">
       {/* Heading */}
       <div className="text-center mb-6">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#003C84]">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#011E5A]">
           Top{" "}
-          <span className="bg-[#FCC409] text-black rounded-3xl px-5">
+          <span className="bg-[#FCC409] text-[#990200] rounded-3xl px-5">
             Recruiters
           </span>
         </h2>
