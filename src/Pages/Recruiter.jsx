@@ -9,7 +9,7 @@ import logo6 from "../assets/Images/bba-logo/6.jpg";
 import logo7 from "../assets/Images/bba-logo/7.jpg";
 import logo8 from "../assets/Images/bba-logo/8.jpg";
 import logo9 from "../assets/Images/bba-logo/9.jpg";
-import logo10 from "../assets/Images/bba-Logo/10.jpg"
+// import logo10 from "../assets/Images/bba-Logo/10.jpg"
 import logo11 from "../assets/Images/bba-logo/11.jpg"
 import logo12 from "../assets/Images/bba-logo/12.jpg"
 import logo13 from "../assets/Images/bba-logo/13.jpg"
@@ -45,7 +45,7 @@ const CompRecruiter = () => {
     logo11,
     logo12,
     logo13,
-    logo10,
+    // logo10,
     logo18,
     logo22,
     logo14,
