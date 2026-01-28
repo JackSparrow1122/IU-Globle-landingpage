@@ -273,6 +273,7 @@ export default function CampusFacilities() {
                     </p>
                   </div>
                 </div>
+
               </div>
             ))}
           </div>
