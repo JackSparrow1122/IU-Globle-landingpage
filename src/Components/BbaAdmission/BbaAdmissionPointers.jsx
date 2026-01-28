@@ -28,7 +28,7 @@ const POINTERS_DATA = [
   {
     id: 3,
     title: "Highest CTC",
-    value: "8 LPA",
+    value: "9 LPA",
     icon: FaChartLine,
   },
 

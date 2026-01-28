@@ -39,23 +39,25 @@ function CompHero() {
       style={{ backgroundImage: `url(${backgroundImage2})` }}
     >
       {/* Overlay */}
-      {/* <div className="absolute inset-0 bg-black/40 z-10"></div> */}
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
 
       {/* Content */}
       <div className="relative z-20 flex min-h-[90vh] flex-col md:flex-row items-center justify-center px-4 sm:px-8 md:px-16 gap-10">
         {/* LEFT TEXT */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <h1 className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[60px] font-semibold">
-            <span className="text-[#FCC409]">BBA</span> at Indira University Pune  
+            <span className="text-[#FCC409]">BBA</span> at Indira University
+            Pune
           </h1>
           <p className="md:text-2xl">
             <span className=" text-4px font-bold">
               {" "}
-31 Years of Legacy Giving You the Education You Can Trust                <br />
+              31 Years of Legacy Giving You the Education You Can Trust <br />
             </span>
           </p>
           <p className="mt-6 text-base sm:text-lg md:text-xl bg-[#FCC409] text-black  px-2 md:px-6 rounded-xl inline-block">
-Admissions Open for 2026-27           </p>
+            Admissions Open for 2026-27{" "}
+          </p>
         </div>
 
         {/* RIGHT FORM */}

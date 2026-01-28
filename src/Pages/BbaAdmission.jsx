@@ -17,9 +17,10 @@ function BbaAdmission() {
     <div>
       <BbaAdmissionHero />
       <BbaAdmissionPointers />
-      <BbaAdmissionOverview />
       <BbaAdmissionTopPlacement />
       <Recruiter/>
+      <BbaAdmissionOverview />
+      
       <BbaAdmissionCourses />
       <BbaDomainCertifications />
       <BBAAdmissionProcess />

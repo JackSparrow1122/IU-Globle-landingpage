@@ -243,7 +243,7 @@ function BbaAdmissionCourses() {
               variants={fadeSide}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-          <div className="mb-10">
+              <div className="mb-10">
                 <h3 className="text-2xl font-bold text-[#b1124a] mb-4">
                   {currentSpecialization.name}
                 </h3>
@@ -264,35 +264,39 @@ function BbaAdmissionCourses() {
                 </p>
               </div>
 
-              <h3 className="text-xl font-semibold text-[#b1124a] mb-6">
-                Top Career Opportunities
-              </h3>
+              {/* Restructured Section: Career Opportunities (Left) + Image (Right) */}
+              <div className="flex flex-col lg:flex-row gap-8 mb-12">
+                {/* LEFT: Career Opportunities */}
+                <div className="lg:w-1/2">
+                  <h3 className="text-xl font-semibold text-[#b1124a] mb-6">
+                    Top Career Opportunities
+                  </h3>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-12">
-                {currentSpecialization.careerOutcomes.map((outcome, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.05 }}
-                    className="flex items-center gap-3"
-                  >
-                    <span className="text-[#b1124a]">✔</span>
-                    <span className="font-medium">{outcome}</span>
-                  </motion.div>
-                ))}
-              </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6">
+                    {currentSpecialization.careerOutcomes.map((outcome, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.05 }}
+                        className="flex items-center gap-3"
+                      >
+                        <span className="text-[#b1124a]">✔</span>
+                        <span className="font-medium">{outcome}</span>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
 
-              {/* Program Highlights with Image */}
-              <div className="bg-gray-50  border border-gray-200 mb-8">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  {/* Image Section */}
-                  <div className="md:w-full">
+                {/* RIGHT: Image */}
+                <div className="lg:w-1/2">
+                  <div className=" ">
                     <img 
-                      src={specializations.image || currentSpecialization.image}
-                      alt="Program Highlights"
-                      className="w-full h-56 object-container rounded-lg shadow-lg"
+                      src={currentSpecialization.image}
+                      alt={currentSpecialization.name}
+                      className="w-full h-64 object-contain"
                     />
+                   
                   </div>
                 </div>
               </div>
@@ -302,7 +306,7 @@ function BbaAdmissionCourses() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setOpen(true)}
-                className="mt-8 bg-[#b1124a] text-white w-full px-8 py-3 rounded-lg font-semibold text-lg hover:bg-[#90103d] transition-colors duration-300"
+                className="mt-4 bg-[#b1124a] text-white w-full px-8 py-3 rounded-lg font-semibold text-lg hover:bg-[#90103d] transition-colors duration-300"
               >
                 Apply Now for {currentSpecialization.name}
               </motion.button>
