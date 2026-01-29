@@ -67,7 +67,7 @@ function BbaAdmissionOverview() {
         />
 
         {/* Overlay */}
-        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#011E5A]/90 via-[#011E5A]/90 to-transparent" />
+        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#7A0C1E] via-[#5C1233] to-[#2A0F3F] to-transparent" />
 
         {/* Content */}
         <div
