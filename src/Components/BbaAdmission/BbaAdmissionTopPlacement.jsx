@@ -149,7 +149,7 @@ const TopPlacements = () => {
                       src={student.image}
                       alt={student.name}
                       className="
-                        w-full h-full object-contain md:object-cover 
+                        w-full h-full object-cover md:object-cover 
                         transition-transform duration-500
                         group-hover:scale-110 object-top 
                       "
