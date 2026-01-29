@@ -77,15 +77,13 @@ function BbaAdmissionOverview() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
             Top BBA College in{" "}
             <span className="text-[#FECD46] md:text-[#FECD46]">
-              Maharashtra
+              India
             </span>
           </h1>
 
           <p className="text-base md:text-lg text-gray-700 md:text-gray-200 mb-4 leading-relaxed">
             Indira University – SOB Pune stands among the{" "}
-            <span className="font-semibold md:text-white">
               top BBA colleges in India
-            </span>
             , offering an industry-curated curriculum under the Bachelor of
             Business Administration (BBA) programme.
           </p>
