@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import logo from "../../assets/logo.png";
 
 const certifications = [
-  { id: 1, title: "Executive Program on GST" },
+  { id: 1, title: "Executive Programme on GST" },
   { id: 2, title: "Certification on Financial Modelling & Financial Analyst" },
   { id: 3, title: "Digital Marketing with AI" },
   { id: 4, title: "Certification course in Import & Export" },
