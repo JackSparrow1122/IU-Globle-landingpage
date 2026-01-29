@@ -17,7 +17,7 @@ const FAQ_DATA = [
   },
   {
     question: "Q4. What is the average placement package for BBA graduates?",
-    answer: "The average package is ₹6 LPA with highest going up to ₹8 LPA.",
+    answer: "The average package is ₹6 LPA with highest going up to ₹9 LPA.",
   },
   {
     question: "Q5. Can I pursue MBA after BBA from Indira University?",
