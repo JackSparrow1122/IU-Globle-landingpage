@@ -17,7 +17,7 @@ const GlobalImmersionProgram = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* WHAT Card */}
-          <div className="bg-gradient-to-br from-blue-50 to-white border-l-8 border-blue-500 rounded-r-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-gradient-to-br from-blue-50 to-white border-l-8 border-[#990000] rounded-r-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <div className="mb-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
                 <span className="text-2xl font-bold text-blue-700">W</span>
@@ -50,7 +50,7 @@ const GlobalImmersionProgram = () => {
           </div>
 
           {/* WHY Card */}
-          <div className="bg-gradient-to-br from-green-50 to-white border-l-8 border-green-500 rounded-r-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-gradient-to-br from-green-50 to-white border-l-8 border-[#011E5A] rounded-r-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <div className="mb-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
                 <span className="text-2xl font-bold text-green-700">W</span>
@@ -70,7 +70,7 @@ const GlobalImmersionProgram = () => {
           </div>
 
           {/* HOW Card */}
-          <div className="bg-gradient-to-br from-purple-50 to-white border-l-8 border-purple-500 rounded-r-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-gradient-to-br from-purple-50 to-white border-l-8 border-[#990000] rounded-r-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <div className="mb-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mb-4">
                 <span className="text-2xl font-bold text-purple-700">H</span>

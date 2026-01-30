@@ -91,9 +91,9 @@ function CompHero() {
           {/* Main Heading with typing animation */}
           <div className="overflow-hidden">
             <h1 className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold py-4 leading-tight animate-slideUp">
-              BBA in International Business 
-              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-normal mt-2">
-                with <br /> Global Immersion Programme
+              BBA in International Business with
+              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-bold mt-2">
+                 <br /> Global Immersion Programme
               </span>
             </h1>
             
@@ -106,17 +106,30 @@ function CompHero() {
             </div> */}
 
             {/* Partnership with floating animation */}
-            <div className="mt-6 md:mt-8 partnership-text transition-transform duration-100">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold relative inline-block">
-                <span className="relative z-10">Indira University x Korea University</span>
-                <span className={`absolute -inset-1 blur-lg bg-gradient-to-r from-[#209EA3] to-[#FCC409] opacity-30 transition-opacity duration-1000 ${glowEffect ? 'opacity-50' : ''}`}></span>
-              </h2>
-            </div>
+            {/* Partnership with floating animation and handshake icon */}
+<div className="mt-6 md:mt-8 partnership-text transition-transform duration-100">
+  <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold relative inline-block">
+    {/* Handshake Icon - Left */}
+    <span className="absolute -left-8 md:-left-10 top-1/2 transform -translate-y-1/2 text-2xl md:text-3xl">
+      
+    </span>
+    
+    {/* Main Text */}
+    <span className="relative z-10 px-2">
+      Indira University🤝Korea University
+    </span>
+    
+
+    
+    {/* Glow Effect */}
+    <span className={`absolute -inset-1 blur-lg bg-gradient-to-r from-[#209EA3] to-[#FCC409] opacity-30 transition-opacity duration-1000 ${glowEffect ? 'opacity-50' : ''}`}></span>
+  </h2>
+</div>
           </div>
 
           {/* Description with staggered animation */}
           <div className="space-y-4">
-            <p className="text-lg sm:text-xl md:text-xl leading-relaxed transform transition-all duration-700 delay-300">
+            <p className="text-lg sm:text-xl md:text-xl leading-relaxed transform transition-all duration-700 delay-300 text-normal">
               Accelerate Your Career with India's Top BBA International Business Degree Featuring Korean Language Training, International Internship Experience, and Global Business Exposure at Korea University 
             </p>
           </div>
