@@ -70,7 +70,7 @@ function BbaAdmissionOverview() {
           {cardData.map((item, index) => (
             <div
               key={index}
-              className="bg-[#011E5A] p-5 rounded-xl relative
+              className="bg-gradient-to-r from-[#7A0C1E] via-[#5C1233] to-[#2A0F3F] p-5 rounded-xl relative
                          transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <item.icon
