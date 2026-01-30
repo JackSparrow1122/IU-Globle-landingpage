@@ -21,7 +21,7 @@ function BbaAdmission() {
     <div>
       <BbaAdmissionHero />
       <BbaAdmissionPointers />
-      <BbaAdmissionTopPlacement />
+      {/* <BbaAdmissionTopPlacement /> */}
       <Recruiter/>
       <About/>
       <BbaAdmissionOverview />
