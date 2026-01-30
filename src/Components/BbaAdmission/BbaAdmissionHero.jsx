@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import backgroundImage2 from "../../assets/IUBanner.jpg";
+import backgroundImage2 from "../../assets/new.jpg";
 import NPFWidget from "../NPFWidget";
 
 function CompHero() {
@@ -7,7 +7,7 @@ function CompHero() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
-  const words = useMemo(() => ["Lead.", "Excel.", "Inspire."], []);
+  const words = useMemo(() => ["Indira University.", " ", "Korea University."], []);
 
   useEffect(() => {
     const handleTyping = () => {
@@ -48,7 +48,7 @@ function CompHero() {
           {/* Main Heading */}
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="text-[#FCC409]">BBA</span> in International Business 
+              <span className="text-[#209EA3]">BBA</span> in International Business 
               <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mt-2">
                 with Global Immersion Programme
               </span>
@@ -57,14 +57,14 @@ function CompHero() {
             {/* Partnership */}
             <div className="mt-4 md:mt-6">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                Indira University x Korea University
+                
               </h2>
             </div>
           </div>
 
           {/* Typing Animation */}
           <div className="h-12 md:h-14 flex items-center">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-medium">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#209EA3]">
               {currentText}
               <span className="animate-pulse">|</span>
             </p>
@@ -72,7 +72,7 @@ function CompHero() {
 
           {/* Description */}
           <div className="space-y-4">
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-xl leading-relaxed">
               Accelerate Your Career with India's Top BBA International Business Degree Featuring Korean Language Training, International Internship Experience, and Global Business Exposure at Korea University 
             </p>
             {/* <ul className="text-base sm:text-lg space-y-2">
@@ -93,7 +93,7 @@ function CompHero() {
 
           {/* Admissions Banner */}
           <div className=" py-4">
-            <p className="text-lg sm:text-xl md:text-2xl bg-[#780D21] text-white font-bold py-3 px-6 rounded-xl inline-block">
+            <p className="text-lg sm:text-xl md:text-2xl bg-[#209EA3] text-white font-bold py-3 px-6 rounded-xl inline-block">
               Admissions Open for 2026-27
             </p>
           </div>
