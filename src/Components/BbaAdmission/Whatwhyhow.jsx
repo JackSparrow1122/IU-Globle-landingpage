@@ -7,12 +7,15 @@ const GlobalImmersionProgram = () => {
         {/* Main Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            What, Why <span className="text-blue-600">&</span> How ?
+            What, Why & How ?
           </h1>
            <h1 className="text-3xl md:text-3xl font-bold text-gray-900 mb-6">
             UNDERSTANDING GLOBAL IMMERSION PROGRAMMES
           </h1>
-          <div className="w-32 h-1.5 bg-blue-600 mx-auto"></div>
+           <div className="mt-12 text-center">
+          <div className="w-32 h-1 bg-gradient-to-r from-[#7A0C1E] to-[#1E40AF] mx-auto mb-4 rounded-full"></div>
+       
+        </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -29,20 +32,14 @@ const GlobalImmersionProgram = () => {
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
               
-              <span className="font-semibold text-blue-700">
+              <span className="font-semibold ">
                 A Global Immersion Programme in BBA education combines international business coursework with hands-on overseas internship experience, providing students with practical cross-cultural management skills and real-world international business exposure at foreign universities like Korea University. 
               </span>
               ,{" "}
-              <span className="font-semibold text-blue-700">
                 global exposure
-              </span>
               ,{" "}
-              <span className="font-semibold text-blue-700">
                 cultural awareness
-              </span>
-              <span className="font-semibold text-blue-700">
                 academic growth
-              </span>
               .
             </p>
 
@@ -61,7 +58,7 @@ const GlobalImmersionProgram = () => {
               <div className="w-20 h-1 bg-green-500 mb-6"></div>
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
-              <span className="font-bold text-green-700">
+              <span className="font-bold ">
                 Global immersion programmes are essential for developing cross-cultural competencies, international business skills, and global networking opportunities that multinational corporations actively seek in BBA graduates, significantly enhancing employability and career prospects in international trade and global business management roles. 
               </span>
              
@@ -82,7 +79,7 @@ const GlobalImmersionProgram = () => {
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
               
-              <span className="font-semibold text-purple-700">Our BBA International Business Global Immersion programme provides Korean language training, Korea University international internship experience, enhanced employability with multinational corporations, Asian business exposure, professional networking opportunities, and comprehensive career development for exceptional career advantages in global business management and export-import sectors. </span>{" "}
+              <span className="font-semibold">Our BBA International Business Global Immersion programme provides Korean language training, Korea University international internship experience, enhanced employability with multinational corporations, Asian business exposure, professional networking opportunities, and comprehensive career development for exceptional career advantages in global business management and export-import sectors. </span>{" "}
             </p>
 
           </div>

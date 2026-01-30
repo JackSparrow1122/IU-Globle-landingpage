@@ -72,12 +72,7 @@ const UniversityComparison = () => {
         </div>
 
         {/* Simple Divider Info */}
-        <div className="mt-12 text-center">
-          <div className="w-32 h-1 bg-gradient-to-r from-[#7A0C1E] to-[#1E40AF] mx-auto mb-4 rounded-full"></div>
-          <p className="text-gray-700 italic">
-            Exclusive International Partnership for Global Business Education
-          </p>
-        </div>
+       
       </div>
     </div>
   );
