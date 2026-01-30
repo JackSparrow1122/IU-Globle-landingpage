@@ -298,7 +298,7 @@ export default function CampusFacilities() {
         </div>
 
         {/* Mobile Navigation Dots */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex gap-3 md:hidden">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex gap-3 md:hidden">
           {data.map((_, index) => (
             <button
               key={index}
@@ -311,7 +311,7 @@ export default function CampusFacilities() {
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
 
 

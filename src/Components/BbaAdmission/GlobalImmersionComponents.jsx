@@ -3,23 +3,24 @@ import React, { useEffect, useState } from "react";
 const CompRecruiter = () => {
   const [isVisible, setIsVisible] = useState(true);
 
+  const specialCard = {
+    title: "What's Included in Your Global Immersion Fee",
+    points: [
+      "Return airfare to South Korea",
+      "Complete visa documentation and charges",
+      "Two weeks accommodation near Korea University",
+      "Programme documentation and academic resources",
+      "Official Korea University internship certificate",
+      "Access to Korea University alumni network",
+    ],
+  };
+
   const cards = [
     {
       title: "Exclusive Global Immersion Programme Components",
       points: [
         "Korean Language Training",
         "International Internship at Korea University",
-      ],
-    },
-    {
-      title: "What's Included in Your Global Immersion Fee",
-      points: [
-        "Return airfare to South Korea",
-        "Complete visa documentation and charges",
-        "Two weeks accommodation near Korea University",
-        "Programme documentation and academic resources",
-        "Official Korea University internship certificate",
-        "Access to Korea University alumni network",
       ],
     },
     {
@@ -67,8 +68,8 @@ const CompRecruiter = () => {
       title: "Further Education Pathways",
       points: [
         "MBA / PGDM in International Business",
-        "Master’s in International Trade",
-        "Master’s programmes at Korean Universities",
+        "Master's in International Trade",
+        "Master's programmes at Korean Universities",
         "Export Management certifications",
       ],
     },
@@ -90,7 +91,7 @@ const CompRecruiter = () => {
   return (
     <div className="py-10 lg:py-14 bg-white overflow-hidden">
       {/* Heading */}
-      <div className="text-center mb-8 px-4">
+      <div className="text-center mb-10 px-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#011E5A]">
           Global Immersion Programme
         </h2>
@@ -100,11 +101,30 @@ const CompRecruiter = () => {
         </p>
       </div>
 
-      {/* Slider */}
+      {/* Special Static Card */}
+      <div className="mb-10 px-4">
+        <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#011E5A]/5 to-[#2899A4]/5 rounded-2xl border-2 border-[#2899A4]/30 p-6 md:p-8 shadow-[0_8px_30px_rgba(40,153,164,0.2)]">
+          <h3 className="text-[#011E5A] font-bold text-xl md:text-2xl mb-4">
+            {specialCard.title}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {specialCard.points.map((point, i) => (
+              <div key={i} className="flex items-start">
+                <svg className="w-5 h-5 text-[#2899A4] mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-700 text-base md:text-lg">{point}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Slider Section */}
       <div className="relative w-full overflow-hidden">
         <div className="slider-row">
           <div
-            className={`slider-track flex ${
+            className={`slider-track flex py-6 ${
               isVisible ? "animate" : ""
             }`}
           >
@@ -169,7 +189,7 @@ const CompRecruiter = () => {
 /* Card Component */
 const Card = ({ data }) => {
   return (
-    <div className="flex-none w-[260px] sm:w-[300px] md:w-[340px]
+    <div className="flex-none  w-[260px] sm:w-[300px] md:w-[340px]
                     mx-3 bg-white rounded-2xl border border-[#2899A4]/40
                     shadow-[0_6px_20px_rgba(40,153,164,0.25)]
                     p-5 transition-all duration-300
