@@ -6,23 +6,23 @@ import img3 from "../../assets/Facilities.jpg";
 const data = [
   {
     id: 1,
-    title: "Events",
+    title: "Campus Facilities and Infrastructure",
     description:
-      "Experience exciting Annual Fest with diverse cultural activities, concerts, Industry Events including corporate conclaves, executive talks, placement drives, and workshops on leadership, industry readiness, skill development, and Cultural Celebrations featuring festivals, talent shows, fresher's induction, farewell parties, and sports tournaments that create well-rounded BBA professionals. ",
+      "Indira University's modern campus features technology-enabled smart classrooms, comprehensive library and digital resources, conference halls hosting guest lectures and industry seminars, career development and placement cell, sports facilities supporting excellence in BBA International Business education with global immersion programme facilities. ",
     image: img2,
   },
   {
     id: 2,
-    title: "Facilities",
+    title: "Student Activities and Clubs",
     description:
-      "Smart classrooms, computer labs, library with e-resources, Innovation and Entrepreneurship Center for startups, AC hostels with Wi-Fi, cafeteria, sports complex, gymnasium, medical center, placement cell, and modern auditorium for comprehensive BBA education in Pune. ",
+      "Experience dynamic campus life through our Entrepreneurship and Innovation Cell connecting aspiring entrepreneurs with mentors, Marketing Club, Finance Club, Cultural Committee hosting annual festivals and talent shows, Technical and IT Club offering coding workshops; providing comprehensive co-curricular development alongside BBA International Business education with global immersion focus. ",
     image: img3,
   },
   {
     id: 3,
-    title: "Student Clubs",
+    title: "Events and Annual Celebrations",
     description:
-      "Marketing Club, Finance Club, HR Club, Digital Marketing Club, Innovation & Entrepreneurship Club, International Business Club, Current Affairs Club, IT Club, Sync Cultural Club, Music Club, Media Club and many more; these clubs  offer leadership opportunities, industry networking, skill development, and resume-building experience for BBA students. ",
+      "Indira University hosts vibrant annual events featuring industry leaders and corporate networking; multi-day cultural festival with celebrity appearances and inter-college participation; sports week promoting fitness and team spirit; fresher's induction farewell ceremony for graduating batches; regular industry interaction through guest lectures from MNCs; and formal convocation ceremony for degree conferment, creating memorable experiences supporting holistic development in business administration education with international exposure. ",
     image: img1,
   },
 ];
@@ -260,8 +260,8 @@ export default function CampusFacilities() {
                 }`}
               >
                 <div className="mb-8">
-                  <span className="inline-block px-4 py-1 bg-gradient-to-r from-[#FCC409] to-[#FFD700] text-black text-sm font-semibold rounded-full mb-4">
-                    Campus Highlights
+                  <span className="inline-block px-4 py-1 bg-[#990000] text-white text-sm font-semibold rounded-full mb-4">
+                    Experience Excellence at Indira University 
                   </span>
 
                   <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
@@ -314,19 +314,7 @@ export default function CampusFacilities() {
         </div>
       </div>
 
-      {/* Scroll hint */}
-      <div
-        className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 flex flex-col items-center ${
-          activeIndex === data.length - 1
-            ? "opacity-0 pointer-events-none"
-            : "opacity-100"
-        }`}
-      >
-        <span className="text-white/70 text-sm mb-2">Scroll down</span>
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gradient-to-b from-[#FCC409] to-[#FFD700] rounded-full mt-2 animate-bounce" />
-        </div>
-      </div>
+
     </section>
   );
 }

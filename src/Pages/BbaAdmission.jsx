@@ -11,7 +11,11 @@ import BbaAdmissionTopPlacement from "../Components/BbaAdmission/BbaAdmissionTop
 import BbaDomainCertifications from "../Components/BbaAdmission/BbaDomainCertifications";
 import BBAAdmissionProcess from "../Components/BbaAdmission/BbaAdmissionProcess";
 import BbaAdmissionFAQ from "../Components/BbaAdmission/BbaAdmissionFAQ";
-
+import About from "../Components/BbaAdmission/About";
+import Whatwhyhow from "../Components/BbaAdmission/Whatwhyhow";
+import Overview from "../Components/BbaAdmission/Overview";
+import GlobalImmersionComponents from "../Components/BbaAdmission/GlobalImmersionComponents";
+import Whychoose from "../Components/BbaAdmission/Whychoose";
 function BbaAdmission() {
   return (
     <div>
@@ -19,13 +23,18 @@ function BbaAdmission() {
       <BbaAdmissionPointers />
       <BbaAdmissionTopPlacement />
       <Recruiter/>
+      <About/>
       <BbaAdmissionOverview />
-      <BbaAdmissionCourses />
-      <BbaDomainCertifications />
+      <Whatwhyhow/>
+      <Overview/>
+      <GlobalImmersionComponents/>
+      <Whychoose/>
+      {/* <BbaAdmissionCourses /> */}
+      {/* <BbaDomainCertifications /> */}
       <BBAAdmissionProcess />
       <BbaAdmissionInfra />
       <BbaAdmissionJoin />
-      <BbaAdmissionTestimonials />
+      {/* <BbaAdmissionTestimonials /> */}
       <BbaAdmissionFAQ />
       {/* <BbaAdmissionFaculty /> */}
     </div>

@@ -35,34 +35,73 @@ function CompHero() {
 
   return (
     <div
-      className="relative min-h-[90vh]  bg-cover bg-center bg-no-repeat text-white"
+      className="relative min-h-[90vh] bg-cover bg-center bg-no-repeat text-white"
       style={{ backgroundImage: `url(${backgroundImage2})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10"></div>
 
       {/* Content */}
-      <div className="relative z-20 flex min-h-[90vh] flex-col md:flex-row items-center justify-center px-4 sm:px-8 md:px-16 gap-10">
+      <div className="relative z-20 flex min-h-[90vh] flex-col md:flex-row items-center justify-center px-4 sm:px-8 md:px-16 gap-8 md:gap-12">
         {/* LEFT TEXT */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-          <h1 className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[60px] font-semibold">
-            <span className="text-[#FCC409]">BBA</span> at Indira University
-            Pune
-          </h1>
-          <p className="md:text-2xl">
-            <span className=" text-4px font-bold">
-              {" "}
-              31 Years of Legacy Giving You the Education You Can Trust <br />
-            </span>
-          </p>
-          <p className="mt-6 text-base sm:text-lg md:text-xl bg-[#FCC409] text-black  px-2 md:px-6 rounded-xl inline-block">
-            Admissions Open for 2026-27{" "}
-          </p>
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+          {/* Main Heading */}
+          <div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="text-[#FCC409]">BBA</span> in International Business 
+              <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mt-2">
+                with Global Immersion Programme
+              </span>
+            </h1>
+            
+            {/* Partnership */}
+            <div className="mt-4 md:mt-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+                Indira University x Korea University
+              </h2>
+            </div>
+          </div>
+
+          {/* Typing Animation */}
+          <div className="h-12 md:h-14 flex items-center">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-medium">
+              {currentText}
+              <span className="animate-pulse">|</span>
+            </p>
+          </div>
+
+          {/* Description */}
+          <div className="space-y-4">
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+              Accelerate Your Career with India's Top BBA International Business Degree Featuring Korean Language Training, International Internship Experience, and Global Business Exposure at Korea University 
+            </p>
+            {/* <ul className="text-base sm:text-lg space-y-2">
+              <li className="flex items-center">
+                <span className="text-[#FCC409] mr-2">•</span>
+                Korean Language Training
+              </li>
+              <li className="flex items-center">
+                <span className="text-[#FCC409] mr-2">•</span>
+                International Internship Experience
+              </li>
+              <li className="flex items-center">
+                <span className="text-[#FCC409] mr-2">•</span>
+                Global Business Exposure at Korea University
+              </li>
+            </ul> */}
+          </div>
+
+          {/* Admissions Banner */}
+          <div className=" py-4">
+            <p className="text-lg sm:text-xl md:text-2xl bg-[#780D21] text-white font-bold py-3 px-6 rounded-xl inline-block">
+              Admissions Open for 2026-27
+            </p>
+          </div>
         </div>
 
         {/* RIGHT FORM */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <div className="w-full max-w-md bg-black/40 p-6 rounded-xl shadow-lg">
+          <div className="w-full max-w-md bg-black/70 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-700">
             <NPFWidget />
           </div>
         </div>

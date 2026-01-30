@@ -75,24 +75,17 @@ function BbaAdmissionOverview() {
           data-aos="fade-right"
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
-            Top BBA College in{" "}
+            Your Global Immersion Experience at  {" "}
             <span className="text-[#FECD46] md:text-[#FECD46]">
-              India
+              Korea University
             </span>
           </h1>
 
           <p className="text-base md:text-lg text-gray-700 md:text-gray-200 mb-4 leading-relaxed">
-            Indira University – SOB Pune stands among the{" "}
-              top BBA colleges in India
-            , offering an industry-curated curriculum under the Bachelor of
-            Business Administration (BBA) programme.
+           During your two-week international internship programme at Korea University in Semester 3, you will participate in intensive business workshops, corporate site visits, cross-cultural management seminars, and practical project work. This immersive experience provides invaluable insights into international business operations, Asian market dynamics, and global trade practices whilst building your professional network across borders. 
           </p>
 
-          <p className="text-base md:text-lg text-gray-700 md:text-gray-200 leading-relaxed">
-            Designed for aspiring business leaders, entrepreneurs, and
-            management professionals, our BBA course after 12th provides the
-            perfect foundation for MBA aspirants and corporate careers.
-          </p>
+
         </div>
 
         {/* Mobile Image */}
@@ -105,33 +98,7 @@ function BbaAdmissionOverview() {
         </div>
       </div>
 
-      {/* ================= WHY CHOOSE US ================= */}
-      <div className="px-6 md:px-16 py-10 bg-white" data-aos="fade-up">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#135883]">
-          Why Choose Us?
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto">
-          {cardData.map((item, index) => (
-            <div
-              key={index}
-              className="bg-[#011E5A] p-5 rounded-xl relative
-                         transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <item.icon
-                size={42}
-                className="text-[#FECD46] mb-4 icon"
-              />
-
-              <p className="text-white font-semibold text-base md:text-lg">
-                {item.title}
-              </p>
-
-              <div className="circle absolute -bottom-4 -right-4 w-10 h-10 bg-white rounded-full shadow-lg" />
-            </div>
-          ))}
-        </div>
-      </div>
+    
     </div>
   );
 }
