@@ -114,8 +114,8 @@ const TopPlacements = () => {
         <div className="md:col-span-2">
             
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            <span className="text-amber-300">TOP PLACEMENTS</span> <br />
+          <h2 className="text-3xl md:text-4xl font-bold  text-white mb-4 ">
+            <span className="text-white bg-[#011E5A] rounded-full px-4">TOP PLACEMENTS</span> <br />
             From Campus <br /> to Corporate
           </h2>
 

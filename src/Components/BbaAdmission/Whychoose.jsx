@@ -75,7 +75,7 @@ function BbaAdmissionOverview() {
             >
               <item.icon
                 size={42}
-                className="text-[#990000] mb-4 icon"
+                className="text-white mb-4 icon"
               />
 
               <p className="text-white font-semibold text-base md:text-lg">
