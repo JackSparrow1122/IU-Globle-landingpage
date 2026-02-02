@@ -77,8 +77,8 @@ const CareerSlider = () => {
   };
 
   return (
-    <div className="py-14 bg-white">
-      <h2 className="text-3xl font-bold text-center text-[#011E5A] mb-8">
+    <div className="py-14 bg-gradient-to-r from-[#990000] via-[#011E5A] to-[#051D58]">
+      <h2 className="text-3xl font-bold text-center text-[white] mb-8">
         Career Opportunities After Global Immersion
       </h2>
 
@@ -94,7 +94,7 @@ const CareerSlider = () => {
         {/* Slider */}
         <div
           ref={sliderRef}
-          className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar px-10"
+          className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar px-4 py-6 "
         >
           {cards.map((card, i) => (
             <div
