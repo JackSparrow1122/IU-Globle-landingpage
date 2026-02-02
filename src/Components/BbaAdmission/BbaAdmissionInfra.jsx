@@ -218,6 +218,7 @@ export default function CampusFacilities() {
   }, []);
 
   return (
+    <>
     <section
       ref={sectionRef}
       className="relative min-h-[100vh] bg-gradient-to-r from-[#990000] via-[#011E5A] to-[#051D58]"
@@ -260,9 +261,7 @@ export default function CampusFacilities() {
                 }`}
               >
                 <div className="mb-8">
-                  <span className="inline-block px-4 py-1 bg-[#990000] text-white text-sm font-semibold rounded-full mb-4">
-                    Experience Excellence at Indira University 
-                  </span>
+                
 
                   <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
                     {item.title}
@@ -316,5 +315,6 @@ export default function CampusFacilities() {
 
 
     </section>
+    </>
   );
 }

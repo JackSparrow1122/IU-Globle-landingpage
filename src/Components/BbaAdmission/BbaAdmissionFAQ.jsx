@@ -1,88 +1,91 @@
 import React, { useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
+import faqImage from "../../assets/faq.png";
 
 /* ---------------- FAQ DATA ---------------- */
 const FAQ_DATA = [
   {
     question: "Q1. What is the eligibility for BBA admission at Indira University?",
-    answer: "You need to have passed 10+2 from any recognized board with minimum 45% aggregate. All streams (Commerce, Science, Arts) are eligible.",
+    answer:
+      "You need to have passed 10+2 from any recognized board with minimum 45% aggregate. All streams (Commerce, Science, Arts) are eligible.",
   },
   {
     question: "Q2. Which entrance exams are accepted for BBA admission?",
-    answer: "We accept CUET and conduct our own Indira University Common Entrance Test (IU-CET).",
+    answer:
+      "We accept CUET and conduct our own Indira University Common Entrance Test (IU-CET).",
   },
   {
     question: "Q3. What is the BBA course fee at Indira University Pune?",
-    answer: "The fee ranges from ₹1.5-3.5 Lakh depending on the programme (General BBA, or Honours), and scholarships are also available.",
+    answer:
+      "The fee ranges from ₹1.5–3.5 Lakh depending on the programme (General BBA or Honours). Scholarships are also available.",
   },
   {
     question: "Q4. What is the average placement package for BBA graduates?",
-    answer: "The average package is ₹6 LPA with highest going up to ₹9 LPA.",
+    answer:
+      "The average package is ₹6 LPA, with the highest packages going up to ₹9 LPA.",
   },
   {
     question: "Q5. Can I pursue MBA after BBA from Indira University?",
-    answer: "Yes! Our BBA graduates have been placed in top B-schools including and international universities.",
+    answer:
+      "Yes, our BBA graduates have been placed in top Indian and international B-schools.",
   },
   {
     question: "Q6. Are hostel facilities available?",
-    answer: "Yes, we provide separate air-conditioned hostels for boys and girls with WiFi, mess, gym, and 24/7 security.",
+    answer:
+      "Yes, we provide separate AC hostels for boys and girls with WiFi, mess, gym, and 24/7 security.",
   },
   {
     question: "Q7. What specializations are offered in BBA?",
-    answer: "We offer multiple specializations such as Marketing management, Financial Management, HR, Digital Marketing, Banking and Financial Services, International Business Management, Logistics and Supply Chain & Operation, Innovation and Entrepreneurship. ",
+    answer:
+      "Marketing, Finance, HR, Digital Marketing, Banking & Finance, International Business, Logistics, Entrepreneurship, and more.",
   },
   {
     question: "Q8. Is work experience required for BBA admission?",
-    answer: "No, BBA is an undergraduate programme for students directly after 12th. No work experience is required.",
+    answer:
+      "No, BBA is an undergraduate program. No work experience is required.",
   },
 ];
 
-/* ---------------- SUB-COMPONENT ---------------- */
-
+/* ---------------- ACCORDION ITEM ---------------- */
 const AccordionItem = ({ item, isOpen, onClick }) => {
   return (
     <div
-      className={`h-full border border-gray-100 rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-lg flex flex-col ${
-        isOpen ? "shadow-md ring-1 ring-blue-100" : ""
+      className={`border border-gray-100 rounded-2xl bg-white transition-all duration-300 ${
+        isOpen ? "shadow-md ring-1 ring-blue-100" : "hover:shadow-lg"
       }`}
     >
       <button
         onClick={onClick}
-        className="w-full flex items-start justify-between px-5 py-4 text-left focus:outline-none flex-shrink-0"
-        aria-expanded={isOpen}
+        className="w-full flex justify-between items-center px-5 py-4 text-left"
       >
         <span
-          className={`text-base font-semibold pr-8 transition-colors duration-300 flex-1 ${
-            isOpen
-              ? "text-[#990000]"
-              : "text-gray-800 group-hover:text-[#990000]"
+          className={`font-semibold text-sm md:text-base ${
+            isOpen ? "text-[#990000]" : "text-gray-800"
           }`}
         >
           {item.question}
         </span>
 
-        {/* Icon Container */}
         <span
-          className={`flex-shrink-0 ml-2 w-7 h-7 flex items-center justify-center rounded-full transition-all duration-300 ${
+          className={`w-8 h-8 flex items-center justify-center rounded-full transition-all ${
             isOpen
               ? "bg-[#990000] text-white rotate-180"
-              : "bg-gray-50 text-[#990000] group-hover:bg-[#990000]/10"
+              : "bg-gray-100 text-[#990000]"
           }`}
         >
-          <FaArrowDown size={10} />
+          <FaArrowDown size={12} />
         </span>
       </button>
 
-      {/* CSS Grid Trick for Height Animation */}
       <div
-        className={`grid transition-[grid-template-rows] duration-300 ease-out flex-1 ${
+        className={`grid transition-[grid-template-rows] duration-300 ${
           isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
         <div className="overflow-hidden">
-          <div className="px-5 pb-5 text-sm text-gray-600 leading-relaxed border-t border-dashed border-gray-100 pt-3">
+          <p className="px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-dashed">
             {item.answer}
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -90,43 +93,40 @@ const AccordionItem = ({ item, isOpen, onClick }) => {
 };
 
 /* ---------------- MAIN COMPONENT ---------------- */
-
 function BbaAdmissionFAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleFAQ = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   return (
-    <section className="relative px-4 sm:px-6 md:px-12 py-16 bg-gradient-to-r from-[#990000] via-[#011E5A] to-[#051D58] overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-40">
-        <div className="absolute -top-[20%] -right-[10%] w-[500px] h-[500px] rounded-full bg-blue-100 blur-3xl mix-blend-multiply filter" />
-        <div className="absolute top-[20%] -left-[10%] w-[400px] h-[400px] rounded-full bg-indigo-100 blur-3xl mix-blend-multiply filter" />
-      </div>
-
-      <div className="relative max-w-7xl mx-auto z-10">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-white max-w-3xl mx-auto">
-            Get answers to the most common questions about BBA admissions
-          </p>
+    <section className="px-4 md:px-12 py-20 ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        
+        {/* LEFT IMAGE */}
+        <div className="sticky top-24">
+          <img
+            src={faqImage}
+            alt="Explore Experience Excel"
+            className="rounded-3xl w-full max-h-[520px] object-contain "
+          />
         </div>
 
-        {/* 3 Column Grid for FAQ Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
-          {FAQ_DATA.map((item, index) => (
-            <AccordionItem
-              key={index}
-              item={item}
-              isOpen={activeIndex === index}
-              onClick={() => toggleFAQ(index)}
-            />
-          ))}
+        {/* RIGHT FAQ */}
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#011E5A]">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-4">
+            {FAQ_DATA.map((item, index) => (
+              <AccordionItem
+                key={index}
+                item={item}
+                isOpen={activeIndex === index}
+                onClick={() =>
+                  setActiveIndex(activeIndex === index ? null : index)
+                }
+              />
+            ))}
+          </div>
         </div>
 
       </div>

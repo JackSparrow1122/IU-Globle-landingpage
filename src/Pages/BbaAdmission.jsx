@@ -20,21 +20,21 @@ function BbaAdmission() {
   return (
     <div>
       <BbaAdmissionHero />
-      {/* <BbaAdmissionPointers /> */}
+      <BbaAdmissionPointers />
       <BbaAdmissionTopPlacement />
-      <Recruiter/>
-      <About/>
+      <Recruiter />
+      <Overview />
+      <GlobalImmersionComponents />
+      <About />
+      <Whychoose />
       <BbaAdmissionOverview />
-      <Whatwhyhow/>
-      <Overview/>
-      <GlobalImmersionComponents/>
-      <Whychoose/>
-      {/* <BbaAdmissionCourses /> */}
+      <BbaAdmissionCourses />
       {/* <BbaDomainCertifications /> */}
-      <BBAAdmissionProcess />
+      <Whatwhyhow />
       <BbaAdmissionInfra />
       <BbaAdmissionJoin />
       {/* <BbaAdmissionTestimonials /> */}
+      <BBAAdmissionProcess />
       <BbaAdmissionFAQ />
       {/* <BbaAdmissionFaculty /> */}
     </div>
