@@ -5,8 +5,6 @@ import ProgramImg from "../../assets/overview.png"; // <-- apni image ka path
 const BBAProgramOverview = () => {
   return (
     <>
-
-
       {/* CONTENT SECTION */}
       <section className="bg-gradient-to-r from-[#7A0C1E] via-[#5C1233] to-[#2A0F3F]">
         <div className=" mx-auto px-6 md:px-16 ">
@@ -25,11 +23,7 @@ const BBAProgramOverview = () => {
                   GLOBAL IMMERSION 
                 </span>
               </h3>
-              <div className="flex items-center gap-3 mb-5">
-                <h3 className="text-2xl md:text-3xl font-bold text-white">
-                  Programme Overview
-                </h3>
-              </div>
+        
 
               <div className="space-y-5 text-base md:text-lg leading-relaxed text-white/90">
                 <p>
