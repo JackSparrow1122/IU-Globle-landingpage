@@ -78,7 +78,7 @@ const CareerSlider = () => {
 
   return (
     <div className="py-14 bg-gradient-to-r from-[#990000] via-[#011E5A] to-[#051D58]">
-      <h2 className="text-3xl font-bold text-center text-[white] mb-8">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-[white] mb-8">
         Career Opportunities After Global Immersion
       </h2>
 
