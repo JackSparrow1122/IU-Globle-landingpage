@@ -16,18 +16,14 @@ const CompRecruiter = () => {
   const feeCard = {
     title: "Fee Structure",
     points: [
-      "Year 1: ₹3,50,000 (Includes ₹1,75,000 regular BBA International Business fees + ₹1,75,000 Global Immersion component)",
-      "Year 2 & 3 : ₹1,75,000",
+      "Year 1: ₹3,50,000 (₹1,75,000 regular BBA International Business fees + ₹1,75,000 Global Immersion component)",
+      "Year 2 & 3: ₹1,75,000 per year",
     ],
   };
 
   const topCards = [
-    {
-      title: "Korean Language Training",
-    },
-    {
-      title: "International Internship at Korea University",
-    },
+    { title: "Korean Language Training" },
+    { title: "International Internship at Korea University" },
   ];
 
   return (
@@ -55,7 +51,7 @@ const CompRecruiter = () => {
         </div>
       </div>
 
-      {/* What's Included (BIG) + Fee Structure (SMALL) */}
+      {/* BIG + SMALL CARDS */}
       <div className="max-w-7xl mx-auto px-4 mb-12">
         <div className="grid lg:grid-cols-3 gap-8">
           
@@ -64,11 +60,14 @@ const CompRecruiter = () => {
             <h3 className="text-[#011E5A] font-bold text-2xl mb-6">
               {specialCard.title}
             </h3>
+
             <div className="grid md:grid-cols-2 gap-4">
               {specialCard.points.map((point, i) => (
                 <div key={i} className="flex items-start">
                   <span className="text-[#2899A4] mr-3">✔</span>
-                  <span className="text-gray-700">{point}</span>
+                  <span className="text-gray-700 text-sm md:text-base">
+                    {point}
+                  </span>
                 </div>
               ))}
             </div>
@@ -79,7 +78,8 @@ const CompRecruiter = () => {
             <h3 className="text-[#011E5A] font-bold text-xl mb-4">
               {feeCard.title}
             </h3>
-            <div className="space-y-3 text-gray-700 text-sm">
+
+            <div className="space-y-3 text-gray-700 text-sm mb-5">
               {feeCard.points.map((point, i) => (
                 <div key={i} className="flex items-start">
                   <span className="text-[#2899A4] mr-2">✔</span>
@@ -87,20 +87,19 @@ const CompRecruiter = () => {
                 </div>
               ))}
             </div>
+
+            {/* IMPORTANT NOTE (SMALL & CLEAN) */}
+            <div className="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-200">
+              <p className="text-amber-800 text-xs font-semibold mb-1">
+                Important Note
+              </p>
+              <p className="text-amber-700 text-xs leading-relaxed">
+                Food expenses during the South Korea internship are to be borne
+                by the student, allowing flexibility in dining choices.
+              </p>
+            </div>
           </div>
 
-        </div>
-
-        {/* Important Note */}
-        <div className="mt-8 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl border border-amber-300 p-6">
-          <h3 className="text-amber-800 font-bold text-xl mb-2">
-            Important Note
-          </h3>
-          <p className="text-amber-700">
-            Food expenses during the South Korea internship remain the student's
-            responsibility, providing flexibility in dining choices and budget
-            management.
-          </p>
         </div>
       </div>
     </div>
