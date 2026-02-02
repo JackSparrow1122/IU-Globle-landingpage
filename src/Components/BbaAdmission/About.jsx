@@ -8,7 +8,7 @@ const UniversityComparison = () => {
   return (
     <>
       <div className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-black mb-2 md:mb-8">
+        <h1 className="text-4xl md:text-4xl font-bold text-center text-black mb-2 md:mb-8">
           ABOUT US
         </h1>
       </div>

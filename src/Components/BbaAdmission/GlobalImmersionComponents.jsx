@@ -27,16 +27,16 @@ const CompRecruiter = () => {
   ];
 
   return (
-    <div className="py-12 bg-white overflow-hidden">
+    <div className=" bg-white overflow-hidden">
       {/* Heading */}
-      <div className="text-center mb-12 px-4">
+      <div className="text-center m-6 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-[#011E5A]">
           Exclusive Global Immersion Programme Components
         </h2>
       </div>
 
       {/* Top Cards */}
-      <div className="max-w-6xl mx-auto px-4 mb-12">
+      <div className="max-w-6xl mx-auto px-4 mb-6">
         <div className="grid md:grid-cols-2 gap-6">
           {topCards.map((card, index) => (
             <div
@@ -79,7 +79,7 @@ const CompRecruiter = () => {
               {feeCard.title}
             </h3>
 
-            <div className="space-y-3 text-gray-700 text-sm mb-5">
+            <div className="space-y-3 text-gray-700 text-sm mb-5 font-bold">
               {feeCard.points.map((point, i) => (
                 <div key={i} className="flex items-start">
                   <span className="text-[#2899A4] mr-2">✔</span>

@@ -139,7 +139,7 @@ function CompHero() {
           {/* Admissions Banner with pulse animation */}
           <div className="py-4 transform transition-all duration-700 delay-500">
             <div className="relative inline-block group">
-              <p className="text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-[#209EA3] to-[#1a7a7d] text-white font-bold py-3 px-6 rounded-xl inline-block transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl shadow-lg animate-pulse-slow">
+              <p className="text-lg sm:text-xl md:text-2xl bg-[#D3FFFD] text-black font-bold py-3 px-6 rounded-xl inline-block transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl shadow-lg animate-pulse-slow">
                 Admissions Open for 2026-27
               </p>
               <div className="absolute -inset-1 bg-gradient-to-r from-[#209EA3] to-[#FCC409] rounded-xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300 -z-10"></div>

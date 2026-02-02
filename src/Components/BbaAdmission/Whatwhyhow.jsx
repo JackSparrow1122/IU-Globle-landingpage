@@ -6,7 +6,7 @@ const GlobalImmersionProgram = () => {
       <div className="max-w-6xl mx-auto">
         {/* Main Header */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl md:text-5xl font-bold text-gray-900 mb-6">
             What, Why & How ?
           </h1>
           <h1 className="text-3xl md:text-3xl font-bold text-gray-900 mb-6">

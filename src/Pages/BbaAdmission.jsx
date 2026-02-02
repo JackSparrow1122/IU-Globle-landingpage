@@ -32,9 +32,10 @@ function BbaAdmission() {
       {/* <BbaDomainCertifications /> */}
       <Whatwhyhow />
       <BbaAdmissionInfra />
+            <BBAAdmissionProcess />
+
       <BbaAdmissionJoin />
       {/* <BbaAdmissionTestimonials /> */}
-      <BBAAdmissionProcess />
       <BbaAdmissionFAQ />
       {/* <BbaAdmissionFaculty /> */}
     </div>
