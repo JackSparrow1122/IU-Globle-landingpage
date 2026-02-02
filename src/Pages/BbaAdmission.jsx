@@ -20,8 +20,8 @@ function BbaAdmission() {
   return (
     <div>
       <BbaAdmissionHero />
-      <BbaAdmissionPointers />
-      {/* <BbaAdmissionTopPlacement /> */}
+      {/* <BbaAdmissionPointers /> */}
+      <BbaAdmissionTopPlacement />
       <Recruiter/>
       <About/>
       <BbaAdmissionOverview />

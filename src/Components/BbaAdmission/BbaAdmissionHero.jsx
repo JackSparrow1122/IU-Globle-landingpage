@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from "react";
-import backgroundImage2 from "../../assets/IUBanner.jpg";
+import backgroundImage2 from "../../assets/hero.jpg";
 import NPFWidget from "../NPFWidget";
 
 function CompHero() {
@@ -114,7 +114,7 @@ function CompHero() {
                 <span className="absolute -left-8 md:-left-10 top-1/2 transform -translate-y-1/2 text-2xl md:text-3xl"></span>
 
                 {/* Main Text */}
-                <span className="relative z-10 px-2">
+                <span className="relative z-10 px-2 text-[26px]">
                   Indira University🤝Korea University
                 </span>
 
@@ -162,8 +162,8 @@ function CompHero() {
           className={`w-full md:w-1/2 flex justify-center md:justify-end transform transition-all duration-1000 delay-300 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}
         >
           <div className="relative w-full max-w-md group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#209EA3] to-[#FCC409] rounded-2xl blur opacity-30 group-hover:opacity-50 transition-all duration-500 animate-glow"></div>
-            <div className="relative bg-black/80 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-700 transform transition-all duration-300 group-hover:scale-[1.02]">
+            <div className="absolute -inset-1 "></div>
+            <div className="relative p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-700 transform transition-all duration-300 group-hover:scale-[1.02]">
               <NPFWidget />
             </div>
           </div>
