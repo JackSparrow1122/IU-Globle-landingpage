@@ -1,6 +1,6 @@
 import React from "react";
 import { BookOpen } from "lucide-react";
-import ProgramImg from "../../assets/hero.jpg"; // <-- apni image ka path
+import ProgramImg from "../../assets/overview.png"; // <-- apni image ka path
 
 const BBAProgramOverview = () => {
   return (
@@ -17,19 +17,19 @@ const BBAProgramOverview = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-10">
 
           {/* Main Title */}
-          <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-4xl font-bold text-white">
-                            BBA in International Business with Global Immersion
-
-            </h3>
-          </div>
+          
 
           {/* LEFT TEXT + RIGHT IMAGE */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
 
             {/* LEFT – Programme Description */}
             <div>
+                <h3 className="text-2xl md:text-4xl font-bold text-white py-4">
+                            <span className="bg-[#1B7B7F] text-white px-2  rounded-md">BBA</span> in International Business with <span className="bg-[#1B7B7F] text-white px-2 rounded-md">Global Immersion</span>
+
+            </h3>
               <div className="flex items-center gap-3 mb-5">
+                
                 <h3 className="text-2xl md:text-3xl font-bold text-white">
                   Programme Overview
                 </h3>
@@ -66,14 +66,38 @@ const BBAProgramOverview = () => {
               </div>
             </div>
 
-            {/* RIGHT – IMAGE */}
-            <div className="flex justify-center">
-              <img
-                src={ProgramImg}
-                alt="Global Immersion Programme"
-                className="w-full max-w-md rounded-2xl shadow-2xl object-cover"
-              />
-            </div>
+{/* RIGHT – IMAGE */}
+<div className="flex justify-center md:justify-end bg-none">
+  <div
+    className="
+      w-full
+      h-[320px]
+      sm:h-[400px]
+      md:h-[460px]
+      lg:h-[560px]
+      xl:h-[600px]
+      flex
+      items-center
+      justify-center
+    "
+  >
+    <img
+      src={ProgramImg}
+      alt="Global Immersion Programme"
+      className="
+        max-h-full
+        w-auto
+        max-w-full
+        scale-110
+        md:scale-125
+        lg:scale-130
+        drop-shadow-2xl
+        transition-transform
+        duration-300
+      "
+    />
+  </div>
+</div>
 
           </div>
         </div>
