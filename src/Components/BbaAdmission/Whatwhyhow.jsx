@@ -51,7 +51,7 @@ const GlobalImmersionProgram = () => {
                 cross-cultural management skills and real-world international
                 business exposure at foreign universities like Korea University.
               </span>
-              , global exposure , cultural awareness academic growth .
+              , global exposure , cultural awareness academic growth.
             </p>
           </div>
 
