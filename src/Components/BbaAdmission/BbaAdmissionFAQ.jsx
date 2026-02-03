@@ -4,37 +4,35 @@ import { FaArrowDown } from "react-icons/fa";
 /* ---------------- FAQ DATA ---------------- */
 const FAQ_DATA = [
   {
-    question: "Q1. What is the eligibility for BBA admission at Indira University?",
-    answer: "You need to have passed 10+2 from any recognized board with minimum 45% aggregate. All streams (Commerce, Science, Arts) are eligible.",
+    question: "Can I apply if my 12th results are not yet declared?",
+    answer:
+      "Yes, you may apply with your latest available mark sheets (11th standard or 12th mid-term). Final admission will be subject to meeting eligibility criteria in final 12th results.",
   },
   {
-    question: "Q2. Which entrance exams are accepted for BBA admission?",
-    answer: "We accept CUET and conduct our own Indira University Common Entrance Test (IU-CET).",
+    question:" Is work experience required for admission?",
+    answer:
+      "No, the BBA programme is designed for students immediately after 12th standard. Work experience is not required or expected.",
   },
   {
-    question: "Q3. What is the BBA course fee at Indira University Pune?",
-    answer: "The fee ranges from ₹1.5-3.5 Lakh depending on the programme (General BBA, or Honours), and scholarships are also available.",
+    question: "What if I don't have a passport currently?",
+    answer:
+      "You can apply and confirm admission without a passport. However, you must obtain a passport before the Semester 3 international internship (approximately 18 months after admission commencement), which provides sufficient time for passport processing. ",
   },
   {
-    question: "Q4. What is the average placement package for BBA graduates?",
-    answer: "The average package is ₹6 LPA with highest going up to ₹9 LPA.",
+    question: " When does the South Korea internship take place?",
+    answer: "The two-week intensive international internship at Korea University occurs during Semester 3 (typically January-February of the second academic year), allowing students eighteen months to complete passport formalities and prepare adequately for international travel.",
   },
   {
-    question: "Q5. Can I pursue MBA after BBA from Indira University?",
-    answer: "Yes! Our BBA graduates have been placed in top B-schools including and international universities.",
+    question: "Is mathematics mandatory in 12th standard for BBA admission?",
+    answer:
+      " No, mathematics in 12th standard is not mandatory. Students from any stream (Commerce, Science, or Arts) with any subject combination meeting the minimum percentage criteria are eligible for admission.",
   },
   {
-    question: "Q6. Are hostel facilities available?",
-    answer: "Yes, we provide separate air-conditioned hostels for boys and girls with WiFi, mess, gym, and 24/7 security.",
+    question: "Can I pursue MBA abroad after this BBA programme?",
+    answer:
+      "Absolutely. The BBA degree from Indira University is recognised for admission to master's programmes globally. International exposure through the Korea University internship, documented international experience, and Korean language skills actually strengthen applications for foreign universities.",
   },
-  {
-    question: "Q7. What specializations are offered in BBA?",
-    answer: "We offer multiple specializations such as Marketing management, Financial Management, HR, Digital Marketing, Banking and Financial Services, International Business Management, Logistics and Supply Chain & Operation, Innovation and Entrepreneurship. ",
-  },
-  {
-    question: "Q8. Is work experience required for BBA admission?",
-    answer: "No, BBA is an undergraduate programme for students directly after 12th. No work experience is required.",
-  },
+  
 ];
 
 /* ---------------- SUB-COMPONENT ---------------- */
@@ -118,7 +116,7 @@ function BbaAdmissionFAQ() {
         </div>
 
         {/* 3 Column Grid for FAQ Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-43gap-4 md:gap-5">
           {FAQ_DATA.map((item, index) => (
             <AccordionItem
               key={index}
@@ -128,7 +126,6 @@ function BbaAdmissionFAQ() {
             />
           ))}
         </div>
-
       </div>
     </section>
   );
