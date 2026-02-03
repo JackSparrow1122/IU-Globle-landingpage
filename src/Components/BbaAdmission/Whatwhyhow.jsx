@@ -44,7 +44,7 @@ const GlobalImmersionProgram = () => {
               <div className="w-20 h-1 bg-[#990000] mb-6"></div>
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
-              <span className="font-semibold ">
+              <span className=" ">
                 A Global Immersion Programme in BBA education combines
                 international business coursework with hands-on overseas
                 internship experience, providing students with practical
@@ -81,7 +81,7 @@ const GlobalImmersionProgram = () => {
               <div className="w-20 h-1 bg-[#03807c] mb-6"></div>
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
-              <span className="font-bold ">
+              <span className="">
                 Global immersion programmes are essential for developing
                 cross-cultural competencies, international business skills, and
                 global networking opportunities that multinational corporations
@@ -118,7 +118,7 @@ const GlobalImmersionProgram = () => {
               <div className="w-20 h-1 bg-[#092fce] mb-6"></div>
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
-              <span className="font-semibold">
+              <span className="">
                 Our BBA International Business Global Immersion programme
                 provides Korean language training, Korea University
                 international internship experience, enhanced employability with
