@@ -97,8 +97,7 @@ const UniversityComparison = () => {
                     direct access to global academic resources, international
                     business networks, and cross-cultural learning experiences.
                     Located in Seoul's global business hub with strong
-                    connections to leading Korean corporations (Samsung, LG,
-                    Hyundai, SK Group), Korea University provides competitive
+                    connections to leading corporations, Korea University provides competitive
                     advantages in understanding Asian business dynamics,
                     international trade practices, and multicultural business
                     environments.

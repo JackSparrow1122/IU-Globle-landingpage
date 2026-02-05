@@ -57,13 +57,7 @@ function BbaAdmissionOverview() {
           </h1>
 
           <p className="text-base md:text-lg text-black md:text-black mb-4 leading-relaxed">
-            During your two-week international internship programme at Korea
-            University in Semester 3, you will participate in intensive business
-            workshops, corporate site visits, cross-cultural management
-            seminars, and practical project work. This immersive experience
-            provides invaluable insights into international business operations,
-            Asian market dynamics, and global trade practices whilst building
-            your professional network across borders.
+        During your two-week international internship programme at Korea University, you will participate in intensive business lessons, educational site visits, and practical project work. This immersive experience provides invaluable insights into international business operations, Asian market dynamics, and global trade practices whilst building your professional network across borders.
           </p>
         </div>
       </div>

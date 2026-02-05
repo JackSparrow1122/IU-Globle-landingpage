@@ -8,25 +8,27 @@ const data = [
     id: 1,
     title: "Campus Facilities and Infrastructure",
     description:
-      "Indira University's modern campus features technology-enabled smart classrooms, comprehensive library and digital resources, conference halls hosting guest lectures and industry seminars, career development and placement cell, sports facilities supporting excellence in BBA International Business education with global immersion programme facilities. ",
+      "Indira University's modern campus features technology-enabled smart classrooms, comprehensive library and digital resources, conference halls hosting guest lectures and industry seminars, career development and placement cell, sports facilities supporting excellence in BBA International Business education with global immersion programme facilities.",
     image: img2,
+    contentSide: "left", // First: content left, image right
   },
   {
     id: 2,
     title: "Student Activities and Clubs",
     description:
-      "Experience dynamic campus life through our Entrepreneurship and Innovation Cell connecting aspiring entrepreneurs with mentors, Marketing Club, Finance Club, Cultural Committee hosting annual festivals and talent shows, Technical and IT Club offering coding workshops; providing comprehensive co-curricular development alongside BBA International Business education with global immersion focus. ",
+      "Experience dynamic campus life through our Entrepreneurship and Innovation Cell connecting aspiring entrepreneurs with mentors, Marketing Club, Finance Club, Cultural Committee hosting annual festivals and talent shows, Technical and IT Club offering coding workshops; providing comprehensive co-curricular development alongside BBA International Business education with global immersion focus.",
     image: img3,
+    contentSide: "right", // Second: content right, image left
   },
   {
     id: 3,
     title: "Events and Annual Celebrations",
     description:
-      "Indira University hosts vibrant annual events featuring industry leaders and corporate networking; multi-day cultural festival with celebrity appearances and inter-college participation; sports week promoting fitness and team spirit; fresher's induction farewell ceremony for graduating batches; regular industry interaction through guest lectures from MNCs; and formal convocation ceremony for degree conferment, creating memorable experiences supporting holistic development in business administration education with international exposure. ",
+      "Indira University hosts vibrant annual events featuring industry leaders and corporate networking; multi-day cultural festival with celebrity appearances and inter-college participation; sports week promoting fitness and team spirit; fresher's induction farewell ceremony for graduating batches; regular industry interaction through guest lectures from MNCs; and formal convocation ceremony for degree conferment, creating memorable experiences supporting holistic development in business administration education with international exposure.",
     image: img1,
+    contentSide: "left", // Third: content left, image right
   },
 ];
-
 export default function CampusFacilities() {
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRef = useRef(null);
@@ -218,7 +220,6 @@ export default function CampusFacilities() {
   }, []);
 
   return (
-    <>
     <section
       ref={sectionRef}
       className="relative min-h-[100vh] bg-gradient-to-r from-[#990000] via-[#011E5A] to-[#051D58]"
@@ -226,53 +227,76 @@ export default function CampusFacilities() {
     >
       {/* Sticky container that stays in view */}
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
-        {/* Background images inside sticky container */}
-        <div className="absolute inset-0">
-          {data.map((item, index) => (
-            <div
-              key={item.id}
-              className={`absolute inset-0 transition-all duration-700 ease-out ${
-                activeIndex === index
-                  ? "opacity-80 z-10"
-                  : "opacity-0 pointer-events-none"
-              }`}
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover"
-              />
-              {/* Overlay for better text visibility */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#990000]/40 via-[#011E5A]/70 to-[#051D58]/40" />
-            </div>
-          ))}
-        </div>
-
         {/* Content Container - Inside sticky div */}
-        <div className="relative container mx-auto px-4 lg:px-8 z-20">
-          <div className="max-w-6xl mx-auto">
+        <div className="relative container mx-auto px-4 lg:px-8 z-20 w-full">
+          <div className="max-w-7xl mx-auto">
             {data.map((item, index) => (
               <div
                 key={item.id}
-                className={`transition-all duration-700 ease-out text-center ${
+                className={`transition-all duration-700 ease-out ${
                   activeIndex === index
-                    ? "opacity-100 translate-y-0"
+                    ? "opacity-100"
                     : "opacity-0 absolute inset-x-0 pointer-events-none"
                 }`}
               >
-                <div className="mb-8">
-                
+                <div className="flex flex-col lg:flex-row items-center justify-between min-h-[70vh]">
+                  {/* Content Section */}
+                  <div
+                    className={`w-full lg:w-5/12 mb-10 lg:mb-0 ${
+                      item.contentSide === "left" ? "lg:order-1" : "lg:order-2"
+                    }`}
+                  >
+                    <div className="max-w-xl">
+                      <span className="inline-block px-4 py-1 bg-gradient-to-r from-[#FCC409] to-[#FFD700] text-black text-sm font-semibold rounded-full mb-4">
+                        Campus Highlights
+                      </span>
 
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
-                    {item.title}
-                  </h2>
+                      <h2 className="text-3xl md:text-5xl font-bold  text-white leading-tight">
+                        {item.title}
+                      </h2>
 
-                  <div className="w-24 h-1 bg-gradient-to-r from-[#FCC409] to-[#FFD700] mx-auto mb-8"></div>
+                      <div
+                        className={`w-24 h-1 bg-gradient-to-r from-[#FCC409] to-[#FFD700]  ${
+                          item.contentSide === "left"
+                            ? "lg:mr-auto"
+                            : "lg:ml-auto"
+                        }`}
+                      ></div>
 
-                  <div className="max-w-3xl mx-auto">
-                    <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                      {item.description}
-                    </p>
+                      <div className="max-w-2xl">
+                        <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Image Section */}
+                  <div
+                    className={`w-full lg:w-6/12 ${
+                      item.contentSide === "left" ? "lg:order-2" : "lg:order-1"
+                    }`}
+                  >
+                    <div className="relative">
+                      <div className="relative overflow-hidden transform transition-transform duration-700 ease-out hover:scale-[1.02]">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-[400px] lg:h-[400px] object-contain"
+                        />
+                        {/* Gradient overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                      </div>
+
+                      {/* Decorative element */}
+                      <div
+                        className={`absolute -z-10 w-64 h-64 rounded-full bg-gradient-to-r from-[#FCC409]/20 to-[#FFD700]/10 blur-3xl ${
+                          item.contentSide === "left"
+                            ? "-left-10 -top-10"
+                            : "-right-10 -top-10"
+                        }`}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -297,7 +321,7 @@ export default function CampusFacilities() {
         </div>
 
         {/* Mobile Navigation Dots */}
-        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex gap-3 md:hidden">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex gap-3 md:hidden">
           {data.map((_, index) => (
             <button
               key={index}
@@ -310,11 +334,22 @@ export default function CampusFacilities() {
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
-        </div> */}
+        </div>
       </div>
 
-
+      {/* Scroll hint */}
+      <div
+        className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 flex flex-col items-center ${
+          activeIndex === data.length - 1
+            ? "opacity-0 pointer-events-none"
+            : "opacity-100"
+        }`}
+      >
+        <span className="text-white/70 text-sm mb-2">Scroll down</span>
+        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-gradient-to-b from-[#FCC409] to-[#FFD700] rounded-full mt-2 animate-bounce" />
+        </div>
+      </div>
     </section>
-    </>
   );
 }

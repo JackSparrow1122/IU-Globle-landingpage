@@ -1,13 +1,13 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import backgroundImage2 from "../../assets/hero.jpg";
 import NPFWidget from "../NPFWidget";
+import img from "../../assets/heroglob.jpg";
 
 function CompHero() {
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  const [glowEffect, setGlowEffect] = useState(false);
   const containerRef = useRef(null);
 
   const words = useMemo(() => ["Lead.", "Excel.", "Inspire."], []);
@@ -15,10 +15,6 @@ function CompHero() {
   // Fade in animation on mount
   useEffect(() => {
     setIsVisible(true);
-    const glowInterval = setInterval(() => {
-      setGlowEffect((prev) => !prev);
-    }, 3000);
-    return () => clearInterval(glowInterval);
   }, []);
 
   // Typing effect
@@ -45,18 +41,6 @@ function CompHero() {
     const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120);
     return () => clearTimeout(timeout);
   }, [currentText, isDeleting, currentWordIndex, words]);
-
-  // Floating animation for partnership text
-  useEffect(() => {
-    const floatingInterval = setInterval(() => {
-      const element = document.querySelector(".partnership-text");
-      if (element) {
-        element.style.transform = `translateY(${Math.sin(Date.now() / 1000) * 5}px)`;
-      }
-    }, 50);
-
-    return () => clearInterval(floatingInterval);
-  }, []);
 
   return (
     <div
@@ -90,7 +74,7 @@ function CompHero() {
           className={`w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6 transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
         >
           {/* Main Heading with typing animation */}
-          <div className="overflow-hidden">
+          <div className="overflow-hidden w-full">
             <h1 className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold py-4">
               BBA in International Business with
               <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-bold py-4">
@@ -98,31 +82,15 @@ function CompHero() {
               </span>
             </h1>
 
-            {/* Animated cursor for typing effect */}
-            {/* <div className="flex items-center mt-4">
-              <span className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-[#209EA3] bg-clip-text text-transparent animate-gradient">
-                {currentText}
-              </span>
-              <span className={`ml-1 w-[3px] h-8 bg-[#FCC409] ${!isDeleting ? 'animate-pulse' : ''}`}></span>
-            </div> */}
-
-            {/* Partnership with floating animation */}
-            {/* Partnership with floating animation and handshake icon */}
-            <div className="partnership-text transition-transform duration-100">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold relative inline-block">
-                {/* Handshake Icon - Left */}
-                <span className="absolute -left-8 md:-left-10 top-1/2 transform -translate-y-1/2 text-2xl md:text-3xl"></span>
-
-                {/* Main Text */}
-                <span className="relative z-10 px-2 text-[26px]">
-                  Indira University🤝Korea University
-                </span>
-
-                {/* Glow Effect */}
-                <span
-                  className={`absolute -inset-1 blur-lg bg-gradient-to-r from-[#209EA3] to-[#FCC409] opacity-30 transition-opacity duration-1000 ${glowEffect ? "opacity-50" : ""}`}
-                ></span>
-              </h2>
+            {/* Global Image - Centered */}
+            <div className="my-4 flex justify-center md:justify-start">
+              <div className="w-full max-w-xs md:max-w-sm">
+                <img 
+                  src={img} 
+                  alt="Global Immersion Programme" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
             </div>
           </div>
 
@@ -182,26 +150,6 @@ function CompHero() {
           }
         }
 
-        @keyframes gradient {
-          0%,
-          100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-        }
-
-        @keyframes glow {
-          0%,
-          100% {
-            opacity: 0.3;
-          }
-          50% {
-            opacity: 0.6;
-          }
-        }
-
         @keyframes scroll {
           0% {
             transform: translateY(0);
@@ -210,17 +158,6 @@ function CompHero() {
           100% {
             transform: translateY(10px);
             opacity: 0;
-          }
-        }
-
-        @keyframes slideUp {
-          from {
-            transform: translateY(20px);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
           }
         }
 
@@ -234,35 +171,6 @@ function CompHero() {
           }
         }
 
-        .animate-float {
-          animation: float infinite linear;
-        }
-
-        .animate-gradient {
-          background-size: 200% 200%;
-          animation: gradient 3s ease infinite;
-        }
-
-        .animate-glow {
-          animation: glow 2s ease-in-out infinite;
-        }
-
-        .animate-scroll {
-          animation: scroll 1.5s ease-in-out infinite;
-        }
-
-        .animate-slideUp {
-          animation: slideUp 0.8s ease-out;
-        }
-
-        .animate-pulse-slow {
-          animation: pulse-slow 2s ease-in-out infinite;
-        }
-
-        .animate-bounce-slow {
-          animation: bounce 2s infinite;
-        }
-
         @keyframes bounce {
           0%,
           100% {
@@ -271,6 +179,22 @@ function CompHero() {
           50% {
             transform: translateY(-10px);
           }
+        }
+
+        .animate-float {
+          animation: float infinite linear;
+        }
+
+        .animate-scroll {
+          animation: scroll 1.5s ease-in-out infinite;
+        }
+
+        .animate-pulse-slow {
+          animation: pulse-slow 2s ease-in-out infinite;
+        }
+
+        .animate-bounce-slow {
+          animation: bounce 2s infinite;
         }
       `}</style>
     </div>

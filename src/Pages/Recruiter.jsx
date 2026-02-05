@@ -79,7 +79,7 @@ const CompRecruiter = () => {
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
     window.addEventListener("resize", handleResize);
-    
+
     return () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
       window.removeEventListener("resize", handleResize);
@@ -92,7 +92,7 @@ const CompRecruiter = () => {
     return [
       logos.slice(0, logosPerRow),
       logos.slice(logosPerRow, logosPerRow * 2),
-      logos.slice(logosPerRow * 2)
+      logos.slice(logosPerRow * 2),
     ];
   };
 
@@ -101,7 +101,7 @@ const CompRecruiter = () => {
     const isReverse = animationDirection === "right";
 
     return (
-      <div 
+      <div
         key={`row-${rowIndex}`}
         className="logo-row relative w-full mb-4 md:mb-6 lg:mb-8"
       >
@@ -169,37 +169,41 @@ const CompRecruiter = () => {
     <div className="logo-slider-section py-6 sm:py-8 md:py-10 lg:py-12 roboto-regular overflow-hidden bg-white">
       {/* Heading */}
       <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 px-4 sm:px-6 md:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-                       font-bold text-[#011E5A] mb-2 md:mb-3 lg:mb-4">
+        <h2
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
+                       font-bold text-[#011E5A] mb-2 md:mb-3 lg:mb-4"
+        >
           Top Recruiters
         </h2>
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl 
+        <p
+          className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl 
                      max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto
-                     px-2 sm:px-4 md:px-6 lg:px-8">
-          Three decades of excellence, thousands of successful careers, and a
-          proven track record of transforming students into business leaders.
+                     px-2 sm:px-4 md:px-6 lg:px-8"
+        >
+          Join a legacy where industry giants meet tomorrow’s talent, proving
+          that an Indira University's BBA secures your future at the top
+          companies.
         </p>
       </div>
 
       {/* Logo Slider */}
       <div className="logo-slider-container relative w-full mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
         {/* Render all 3 rows */}
-        {rows.map((rowLogos, index) => (
-          renderLogoRow(
-            rowLogos, 
-            index + 1, 
-            animationDirections[index]
-          )
-        ))}
+        {rows.map((rowLogos, index) =>
+          renderLogoRow(rowLogos, index + 1, animationDirections[index]),
+        )}
 
         {/* Fade edges for each row */}
-        <div className="absolute left-0 top-0 h-full w-12 sm:w-16 md:w-20 lg:w-24 xl:w-28 
-                       bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 h-full w-12 sm:w-16 md:w-20 lg:w-24 xl:w-28 
-                       bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+        <div
+          className="absolute left-0 top-0 h-full w-12 sm:w-16 md:w-20 lg:w-24 xl:w-28 
+                       bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"
+        />
+        <div
+          className="absolute right-0 top-0 h-full w-12 sm:w-16 md:w-20 lg:w-24 xl:w-28 
+                       bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"
+        />
       </div>
 
-     
       {/* CSS */}
       <style>{`
         .logo-slider-container {

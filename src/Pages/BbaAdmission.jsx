@@ -21,10 +21,12 @@ function BbaAdmission() {
     <div>
       <BbaAdmissionHero />
       <BbaAdmissionPointers />
+      <Overview />
+            <GlobalImmersionComponents />
+
       <BbaAdmissionTopPlacement />
       <Recruiter />
-      <Overview />
-      <GlobalImmersionComponents />
+      
       <About />
       <Whychoose />
       <BbaAdmissionOverview />
