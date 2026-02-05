@@ -247,7 +247,7 @@ export default function CampusFacilities() {
                     }`}
                   >
                     <div className="max-w-xl">
-                      <span className="inline-block px-4 py-1 bg-gradient-to-r from-[#FCC409] to-[#FFD700] text-black text-sm font-semibold rounded-full mb-4">
+                      <span className="inline-block px-4 py-1 bg-gradient-to-r from-[#CAA050] to-[#CAA050] text-black text-sm font-semibold rounded-full mb-4">
                         Campus Highlights
                       </span>
 
@@ -255,14 +255,7 @@ export default function CampusFacilities() {
                         {item.title}
                       </h2>
 
-                      <div
-                        className={`w-24 h-1 bg-gradient-to-r from-[#FCC409] to-[#FFD700]  ${
-                          item.contentSide === "left"
-                            ? "lg:mr-auto"
-                            : "lg:ml-auto"
-                        }`}
-                      ></div>
-
+                
                       <div className="max-w-2xl">
                         <p className="text-lg md:text-xl text-white/90 leading-relaxed">
                           {item.description}
@@ -337,19 +330,7 @@ export default function CampusFacilities() {
         </div>
       </div>
 
-      {/* Scroll hint */}
-      <div
-        className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 flex flex-col items-center ${
-          activeIndex === data.length - 1
-            ? "opacity-0 pointer-events-none"
-            : "opacity-100"
-        }`}
-      >
-        <span className="text-white/70 text-sm mb-2">Scroll down</span>
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gradient-to-b from-[#FCC409] to-[#FFD700] rounded-full mt-2 animate-bounce" />
-        </div>
-      </div>
+     
     </section>
   );
 }
