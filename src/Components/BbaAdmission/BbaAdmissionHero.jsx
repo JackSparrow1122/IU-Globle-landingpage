@@ -77,14 +77,14 @@ function CompHero() {
           <div className="overflow-hidden w-full">
             <h1 className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold py-4">
               BBA in International Business with
-              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-bold py-4">
+              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-bold pt-4">
                 Global Immersion Programme
               </span>
             </h1>
 
             {/* Global Image - Centered */}
-            <div className="my-4 flex justify-center md:justify-start">
-              <div className="w-full max-w-xs md:max-w-sm">
+            <div className=" flex justify-center md:justify-start">
+              <div className="w-full max-w-xs md:max-w-md">
                 <img 
                   src={img} 
                   alt="Global Immersion Programme" 
@@ -95,8 +95,8 @@ function CompHero() {
           </div>
 
           {/* Description with staggered animation */}
-          <div className="space-y-4">
-            <p className="text-lg sm:text-xl md:text-xl leading-relaxed transform transition-all duration-700 delay-300 text-normal">
+          <div className="space-y-2">
+            <p className="text-lg sm:text-xl md:text-md leading-relaxed transform transition-all duration-700 delay-300 text-normal">
               Accelerate Your Career with India's Top BBA International Business
               Degree Featuring Korean Language Training, International
               Internship Experience, and Global Business Exposure at Korea
