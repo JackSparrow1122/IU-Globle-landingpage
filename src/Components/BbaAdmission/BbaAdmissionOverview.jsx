@@ -15,7 +15,7 @@ function BbaAdmissionOverview() {
 
   return (
     <div className="overflow-hidden poppins-regular">
-      <div className="w-full px-6 md:px-12 py-8 bg-[#EEF2FF]">
+      <div className="w-full px-4 md:px-8 py-8 bg-[#EEF2FF]">
         <div className="max-w-7xl mx-auto">
 
           {/* ===== TOP LINE HEADING ===== */}
@@ -55,7 +55,7 @@ function BbaAdmissionOverview() {
               <img
                 src={Image1}
                 alt="Korea University"
-                className="w-full max-w-xl object-contain"
+                className="w-full max-w-2xl object-contain"
               />
             </div>
 
