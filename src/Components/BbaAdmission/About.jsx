@@ -69,7 +69,7 @@ const UniversityComparison = () => {
 
                 {/* LOGO TOP RIGHT */}
                 <div className="absolute top-6 right-6">
-                  <img src={koreaLogo} alt="Korea University Logo" className="h-20 object-contain" />
+                  <img src={koreaLogo} alt="Korea University Logo" className="h-23 object-contain" />
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
